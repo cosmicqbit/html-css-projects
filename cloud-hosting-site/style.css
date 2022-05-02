@@ -11,7 +11,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body {
@@ -191,6 +191,18 @@ img {
     transform: translateY(-15px);
 }
 
+
+/* Features */
+
+.features-head img{
+    width: 200px;
+    justify-self: flex-end;
+}
+
+.features-sub-head img{
+    width: 300px;
+    justify-self: flex-end;
+}
 
 /* Footer  */
 
