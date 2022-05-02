@@ -179,6 +179,23 @@ img {
 .languages .card {
     text-align: center;
     margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+
+/* Footer  */
+
+.footer .social a{
+    margin: 0 10px;
 }
 
 /* Utilities */
@@ -262,6 +279,15 @@ img {
 .btn-light {
     background-color: var(--light-color);
     color: #333;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
 }
 
 /* Text Sizes  */
