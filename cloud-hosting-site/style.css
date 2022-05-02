@@ -194,7 +194,7 @@ img {
 
 /* Features */
 
-.features-head img{
+.features-head img, .docs-head img{
     width: 200px;
     justify-self: flex-end;
 }
@@ -220,6 +220,27 @@ img {
     grid-column: 1 / span 2;
 }
 
+/* Docs */
+
+.docs-main h3 {
+    margin: 20px 0;
+}
+
+.docs-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.docs-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+}
+
+.docs-main a:hover {
+    font-weight: bold;
+}
 /* Footer  */
 
 .footer .social a{
@@ -342,6 +363,14 @@ img {
 
 .text-center {
     text-align: center;
+}
+
+/* Alert */
+
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    align-items: center;
 }
 
  /* Margin */
