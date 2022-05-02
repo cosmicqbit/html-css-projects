@@ -3,3 +3,4 @@ A collection of 30 projects I did while learning HTML5 &amp; CSS3
 
 1. [🛒 RedStore Ecommerce site](/redstore-ecommerce-site)
 2. [💳 Virtual Credit Card](/virtual-credit-card)
+3. [☁️ Cloud Hosting site](/cloud-hosting-site)
