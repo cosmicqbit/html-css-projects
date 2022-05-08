@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Playground</title>
+</head>
+<body>
+    <canvas width="1500" height="900" style="border:6px solid cyan"></canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let context = canvas.getContext('2d');
+
+        let gradient = context.createLinearGradient(0, 0, 200, 0);
+        gradient.addColorStop(0, 'red');
+        gradient.addColorStop(1, 'orange');      
+        
+        // Color filled rectangle
+
+        context.fillStyle = gradient;
+        context.fillRect(150, 200, 500, 500);
+
+        // Outlined Square 
+
+        context.lineWidth = 4;
+        context.beginPath();
+        context.rect(750, 200, 500, 500);
+        context.stroke();
+
+        // Repeated squares
+
+        const width  = 80;
+        const height = 80;
+        const gap = 105;
+
+        let x;
+        let y;
+
+        for(j = 0; j < 5; j++) {
+            for (i = 0; i < 5; i++) {
+                
+                x = 750 + gap * i;
+                y = 200 + gap * j;
+
+                context.beginPath();
+                context.rect(x, y, width, height)
+                context.stroke();
+
+                if (Math.random() < 0.5) {
+                    context.beginPath();
+                    context.rect(x + 10, y + 10, width - 20, height - 20);
+                    context.stroke();
+                }
+            }
+        }
+
+        // Cicumscribed circle
+
+        context.beginPath();
+        context.arc(400, 450, 250, 0, Math.PI*2);
+        context.stroke();
+
+
+        // Arrays 
+
+        let years = [];
+        let menu = ['starter', 'main', 'dessert', 'drinks', 'sides'];
+
+        // Iterating over array
+
+        for (let i = 0; i < menu.length; i++) {
+            console.log(menu[i]);
+        }
+
+        // Writing to array
+
+        for (let i = 0; i < 10; i++) {
+            years.push(2020 + i);
+        }
+
+        // ForEach loop
+
+        menu.forEach(item => {
+            console.log(item);
+        });
+
+
+        console.log(years);
+    </script>
+</body>
+</html>
