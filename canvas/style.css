@@ -18,3 +18,7 @@ body {
     background: #f0f0f0;
     border-radius: 5px;
 }
+
+#source {
+    display: none;
+}
