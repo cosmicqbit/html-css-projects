@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+
+}
+
+body {
+    font-family: 'Fira Open Sans', sans-serif;
+}
+
+header {
+    background: rgb(23, 113, 169);
+    text-align: center;
+    height: 12rem; 
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    padding-top: 3rem;
+    padding-bottom: 6px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    font-family: monospace;
+    font-size: larger;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.main, footer{
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main {
+    flex-grow: 1;
+    /* border: 1px solid red; */
+}
+
+.main h1 {
+    margin-bottom: 1.2rem;
+}
+
+.box {
+    padding: 40px 50px;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+}
